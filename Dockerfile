@@ -3,6 +3,8 @@ FROM rust:1.79.0-alpine
 
 COPY . ./build
 
+RUN apk add --no-cache clang lld musl-dev git
+
 RUN cargo install --path ./build
 
 RUN rm -rd ./build
