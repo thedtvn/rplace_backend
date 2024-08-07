@@ -7,7 +7,7 @@ RUN apk add --no-cache clang lld musl-dev git
 
 RUN cargo install --path ./build
 
-RUN rm -rd ./build
+RUN rm -rf ./build
 
 ENTRYPOINT [ "server" ]
 
