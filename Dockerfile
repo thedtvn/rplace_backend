@@ -9,6 +9,6 @@ RUN cargo install --path ./build
 
 RUN rm -rd ./build
 
-ENTRYPOINT [ "server" ]
+ENTRYPOINT [ "rplace_backend" ]
 
 CMD ["--width", "2560", "--height", "1440", "--save-location", "/place/place.png", "--save_all_images","true"]
