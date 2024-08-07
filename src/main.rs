@@ -12,7 +12,7 @@ use axum::Router;
 use clap::Parser as _;
 use helper::{ConfigArgs, Point, StadeData};
 use image::RgbImage;
-use image::io::Reader as ImageReader;
+use image::ImageReader;
 use lazy_static::lazy_static;
 use tokio::sync::Mutex;
 
