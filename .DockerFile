@@ -68,4 +68,7 @@ COPY --from=build /bin/server /bin/
 EXPOSE 8080
 
 # What the container should run when it is started.
-CMD ["/bin/server","--width", "2560", "--height", "1440", "--save-location", "/place/place.png", "--save_all_images","true"]
+
+ENTRYPOINT [ "/bin/server" ]
+
+CMD ["--width", "2560", "--height", "1440", "--save-location", "/place/place.png", "--save_all_images","true"]
